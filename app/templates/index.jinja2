@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image send and paste</title>
+	<link rel="stylesheet" type="text/css" href="../static/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png">
+    <link rel="manifest" href="/static/site.webmanifest">	<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../static/index.js"></script>
+</head>
+<body>
+
+<div class="box">
+
+	<input id="imageinput" type="file" multiple="true" name="image" onchange="readUrl(this)">
+
+	<label for="action">Choose an action:</label>
+    <select name="action" id="action">
+    <option value="difference_sk">difference_sk</option>
+    <option value="difference_threshold">difference_threshold</option>
+    <option value="difference_box">difference_box</option>
+    </select>
+
+	<button name="send" id = "sendbutton">Send</button>
+	<hr>
+	<img id="imagebox2" src="">
+	<img id="imagebox3" src="">
+	<img id="imagebox4" src="">
+    <hr>
+    <img id="imagebox" src="">
+	<img id="imagebox1" src="">
+
+</div>
+</body>
+</html>
